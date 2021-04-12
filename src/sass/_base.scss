@@ -135,7 +135,7 @@ span.circle {
 	display: flex;
 
 	h6 {
-		margin: 0 40px 0 0;
+		margin: 0 50px 0 0;
 		text-transform: capitalize;
 		font-weight: 600;
 		color: $dark-blue;
@@ -151,16 +151,11 @@ span.circle {
 			background: #6a6a8e;
 		}
 	}
-}
 
-.about-me-socials {
-	display: grid;
-	list-style: none;
-	padding-left: 0;
-	grid-template-columns: repeat(3, 45px);
-
-	li {
-		font-size: 1.55rem;
+	i {
+		color: $main-text-color;
+		margin-right: 15px;
+		font-size: 1.3rem;
 		cursor: pointer;
 	}
 }
@@ -169,4 +164,19 @@ span.circle {
 	color: $dark-blue;
 	font-size: 2.2rem;
 	font-weight: 600;
+}
+
+.tech-block {
+	background: #fff;
+	text-align: center;
+	background-size: 200%;
+	background-position: top right;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 50px 20px;
+	margin: 0;
+	position: relative;
+	border: 1px solid #d4f0ff;
+	border-radius: 8px;
+	box-shadow: 0 3.4px 2.7px -30px rgb(0 0 0 / 6%), 0 8.2px 8.9px -30px rgb(0 0 0 / 7%), 0 25px 40px -30px rgb(0 0 0 / 20%);
 }
