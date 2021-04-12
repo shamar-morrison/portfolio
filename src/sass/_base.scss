@@ -15,8 +15,13 @@ a,
 span,
 i,
 .border-anim,
+.border-anim:after,
 .card-set {
 	transition: 1.2s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+}
+
+.bg-gradient-3 {
+	background: $gradient--3;
 }
 
 // --------------- HERO SECTION ----------------- //
@@ -227,6 +232,6 @@ span.circle {
 	padding-left: 0px;
 
 	li {
-		padding-top: 3px;
+		padding-top: 4px;
 	}
 }
