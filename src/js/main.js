@@ -1,16 +1,17 @@
-const aboutSec = document.querySelector('#about');
+const heroSec = document.querySelector('#hero');
 const navbar = document.querySelector('.navbar');
 
 /** Apply CSS style on navbar scroll */
 const navbarObserver = new IntersectionObserver(
 	function (entries) {
+		console.debug(entries);
 		if (!entries[0].isIntersecting) {
-			navbar.classList.remove('sticky');
-		} else {
 			navbar.classList.add('sticky');
+		} else {
+			navbar.classList.remove('sticky');
 		}
 	},
-	{ threshold: 0.2 }
+	{ threshold: 0.85 }
 );
 
-navbarObserver.observe(aboutSec);
+navbarObserver.observe(heroSec);

@@ -285,7 +285,7 @@ span.circle {
 	position: relative;
 	border: 1px solid #d4f0ff;
 	border-radius: 8px;
-	box-shadow: 0 3.4px 2.7px -30px rgb(0 0 0 / 6%), 0 8.2px 8.9px -30px rgb(0 0 0 / 7%), 0 25px 40px -30px rgb(0 0 0 / 20%);
+	box-shadow: $card-shadow;
 
 	&:after {
 		content: '';
@@ -338,10 +338,57 @@ span.circle {
 
 // --------------- PROJECTS SECTION ----------------- //
 
+.projects-section {
+	background-color: #fff;
+
+	&::before {
+		content: '';
+		background: url('../img/dot-pattern.png');
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 0;
+		background-repeat: repeat;
+		height: 400px;
+		background-size: auto;
+	}
+
+	h2 {
+		position: relative;
+		z-index: 1;
+	}
+}
+
 .isotope-item {
 	position: relative;
 }
 
 .item-image {
-	position: relative;
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #f3f9ff;
+	box-shadow: 0 3.4px 2.7px -30px rgb(0 0 0 / 6%), 0 8.2px 8.9px -30px rgb(0 0 0 / 7%), 0 25px 40px -30px rgb(0 0 0 / 20%);
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.item-info {
+	padding: 20px 0 0;
+
+	h4 {
+		color: $dark-blue;
+		font-size: 1.375rem;
+		line-height: 32px;
+		font-weight: 600;
+		margin: 0 0 10px;
+	}
+
+	p {
+		font-size: 1.063rem;
+		line-height: 28px;
+	}
 }
