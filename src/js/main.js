@@ -15,3 +15,7 @@ const navbarObserver = new IntersectionObserver(
 );
 
 navbarObserver.observe(heroSec);
+
+/** Auto-Update Copyright Date */
+const copyrightDate = new Date().getFullYear();
+document.querySelector('.copyright-date').textContent = copyrightDate;

@@ -113,7 +113,7 @@ ul {
 // 		right: -10px;
 // 		width: 20px;
 // 		height: 1px;
-// 		background: #6a6a8e;
+// 		background: $main-text-color;
 // 	}
 // }
 
@@ -261,7 +261,7 @@ span.circle {
 			right: -38px;
 			width: 30px;
 			height: 1px;
-			background: #6a6a8e;
+			background: $main-text-color;
 		}
 	}
 
@@ -486,8 +486,32 @@ span.circle {
 
 // --------------- PROJECTS SECTION ----------------- //
 
-.footer-svg {
-	height: 80px;
-	overflow: hidden;
-	margin: -20px 0 0;
+footer {
+	position: relative;
+}
+
+.footer-contact {
+	margin-top: 100px;
+
+	a {
+		color: $hot-pink;
+	}
+}
+
+.footer-social {
+	margin-top: 70px;
+	padding: 20px 0;
+	border-top: 1px solid lighten($main-text-color, 40%);
+
+	i {
+		color: $main-text-color;
+		display: inline-block;
+		margin: 30px 0;
+		font-size: 1.75rem;
+	}
+	.links {
+		display: grid;
+		grid-template-columns: repeat(3, 100px);
+		justify-content: center;
+	}
 }
