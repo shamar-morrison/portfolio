@@ -1,11 +1,11 @@
-$main-text-color: #6a6a8e;
+$main-text-color: #6a6a90;
 $light-pink: #ffd6d6;
 $dark-blue: #050748;
 $nav-link: #0a2233;
 $hot-pink: #e60072;
 $hot-pink--2: #ff1f8e;
 
-$gradient: linear-gradient(45deg, #ff3870 0, #ff3870 50%, #c300c3 100%);
+$gradient: linear-gradient(45deg, hsl(343, 100%, 61%) 0, #ff3870 50%, #c300c3 100%);
 $gradient--2: linear-gradient(to top, #e2f3ff 0, #fffbef 100%);
 $gradient--3: linear-gradient(to bottom, #e2f3ff 0, #fffbef 100%);
 $gradient--btn: linear-gradient(to right, #ffbd84 0, #ff1f8e 100%);

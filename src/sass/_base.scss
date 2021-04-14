@@ -4,6 +4,7 @@
 }
 
 body {
+	// position: relative;
 	font-family: 'Poppins', sans-serif !important;
 	font-weight: 400 !important;
 	color: $main-text-color;
@@ -170,6 +171,7 @@ ul {
 		color: transparent;
 
 		font-weight: 800;
+		// font-size: clamp(2.5rem, 50% + 1rem, 5.85rem);
 		font-size: 5.85rem;
 		letter-spacing: -3px;
 	}

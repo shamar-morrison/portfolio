@@ -1,0 +1,23 @@
+@media only screen and (max-width: 991px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	.pad-tb {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.common-heading {
+		text-align: center;
+	}
+
+	::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $dark-blue;
+	}
+}
