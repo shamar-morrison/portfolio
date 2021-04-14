@@ -2,7 +2,9 @@ html {
 	.overflow-hidden {
 		overflow: hidden;
 	}
-
+	.invisible {
+		visibility: hidden;
+	}
 	.img-fluid {
 		max-width: 100%;
 		height: auto;

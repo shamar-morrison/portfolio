@@ -1,7 +1,7 @@
 const heroSec = document.querySelector('#hero');
 const navbar = document.querySelector('.navbar');
 
-/** Apply CSS style on navbar scroll */
+/** Apply sticky navbar style on scroll */
 const navbarObserver = new IntersectionObserver(
 	function (entries) {
 		console.debug(entries);
@@ -19,3 +19,10 @@ navbarObserver.observe(heroSec);
 /** Auto-Update Copyright Date */
 const copyrightDate = new Date().getFullYear();
 document.querySelector('.copyright-date').textContent = copyrightDate;
+
+/** Hide Preloader GIF */
+window.onload = function () {
+	document.querySelector('.preloader').style.opacity = '0';
+	document.querySelector('.preloader').classList.add('invisible');
+	document.querySelector('body').style.overflowY = 'scroll';
+};
