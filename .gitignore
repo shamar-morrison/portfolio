@@ -1,5 +1,6 @@
 src/css/plugin.css
 src/css/test.css
-src/img/logo.ai
+
+src/img/*.ai
 
 node_modules
