@@ -157,22 +157,14 @@ ul {
 	}
 }
 
-// .hor-rule {
-// 	&::after {
-// 		content: '';
-// 		position: absolute;
-// 		top: 50%;
-// 		right: -10px;
-// 		width: 20px;
-// 		height: 1px;
-// 		background: $main-text-color;
-// 	}
-// }
-
-.navbar-toggler {
-	&:active,
-	&:focus {
-		outline: 0 !important;
+.navbar-light {
+	.navbar-toggler {
+		color: $nav-link;
+		border-color: transparent;
+		&:focus {
+			border-color: transparent;
+			outline: transparent;
+		}
 	}
 }
 
@@ -187,7 +179,7 @@ ul {
 	height: 100vh;
 	width: 200px;
 	font-weight: 500;
-	text-align: left;
+	text-align: center;
 	background-color: hsl(0, 0%, 5%);
 
 	transform: translateX(-100%);
@@ -199,15 +191,12 @@ ul {
 			padding: 20px 0;
 			border-bottom: 1px solid rgba(56, 56, 56, 0.486);
 			cursor: pointer;
-
-			&:last-child {
-				color: $hot-pink;
-			}
 		}
 	}
 
 	.mobile__menu--title {
 		background-color: #fff;
+		color: #000;
 	}
 }
 
@@ -216,6 +205,10 @@ ul {
 	padding-right: 10px;
 	font-size: 1.5rem;
 	color: #000;
+}
+
+.mobile__menu--download {
+	color: $hot-pink;
 }
 
 // --------------- HERO SECTION ----------------- //

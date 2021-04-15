@@ -40,5 +40,4 @@ const mobileMenuCallback = function () {
 	}
 };
 document.querySelector('.navbar-toggler').addEventListener('click', mobileMenuCallback);
-document.querySelector('.mobile__menu--close').addEventListener('click', mobileMenuCallback);
 mobileMenuLinks.addEventListener('click', mobileMenuCallback);
