@@ -161,9 +161,14 @@ ul {
 	.navbar-toggler {
 		color: $nav-link;
 		border-color: transparent;
+
 		&:focus {
 			border-color: transparent;
 			outline: transparent;
+		}
+
+		.mobile__menu--icon {
+			font-size: 1.5rem;
 		}
 	}
 }
