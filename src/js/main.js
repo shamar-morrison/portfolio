@@ -2,6 +2,7 @@ const heroSec = document.querySelector('#hero');
 const navbar = document.querySelector('.navbar');
 const mobileMenu = document.querySelector('.mobile__menu--container');
 const mobileMenuLinks = document.querySelector('.mobile__menu--links');
+const mobileMenuOverlay = document.querySelector('.mobile__menu--overlay');
 
 /** Apply sticky navbar style on scroll */
 const navbarObserver = new IntersectionObserver(
@@ -34,10 +35,15 @@ const mobileMenuCallback = function () {
 	if (mobileMenu.classList.contains('open')) {
 		mobileMenu.style.transform = 'translateX(-100%)';
 		mobileMenu.classList.remove('open');
+
+		mobileMenuOverlay.classList.add('invisible');
 	} else {
 		mobileMenu.style.transform = 'translateX(0)';
 		mobileMenu.classList.add('open');
+
+		mobileMenuOverlay.classList.remove('invisible');
 	}
 };
 document.querySelector('.navbar-toggler').addEventListener('click', mobileMenuCallback);
 mobileMenuLinks.addEventListener('click', mobileMenuCallback);
+mobileMenuOverlay.addEventListener('click', mobileMenuCallback);
