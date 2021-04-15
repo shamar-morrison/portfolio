@@ -8,6 +8,12 @@
 	}
 }
 
+@media screen and (max-width: 576px) {
+	.pad-sm {
+		margin-top: 20px;
+	}
+}
+
 // iPhone 5/SE
 @media screen and (device-aspect-ratio: 40/71) {
 	.item-image {
@@ -18,16 +24,6 @@
 		.item-btn {
 			padding: 8px 10px !important;
 		}
-	}
-
-	.pad-sm {
-		margin-top: 20px;
-	}
-}
-
-@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
-	.pad-sm {
-		margin-top: 20px;
 	}
 }
 
