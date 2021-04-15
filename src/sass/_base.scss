@@ -324,6 +324,10 @@ span.circle {
 		cursor: pointer;
 		position: relative;
 		bottom: 2px;
+
+		&:hover {
+			color: $hot-pink;
+		}
 	}
 }
 
@@ -579,6 +583,10 @@ footer {
 		display: inline-block;
 		margin: 30px 0;
 		font-size: 1.75rem;
+
+		&:hover {
+			color: $hot-pink;
+		}
 	}
 	.links {
 		display: grid;

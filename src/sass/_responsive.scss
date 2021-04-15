@@ -1,4 +1,35 @@
-@media only screen and (max-width: 991px) {
+// iPhone 5/SE
+@media screen and (device-aspect-ratio: 40/71) {
+	.item-image {
+		.item-overlay-desc {
+			font-size: 0.8rem !important;
+		}
+
+		.item-btn {
+			padding: 8px 10px !important;
+		}
+	}
+
+	.pad-sm {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+	.item-image {
+		.item-overlay-tech,
+		.item-overlay-list {
+			display: none !important;
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.pad-sm {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
 	body {
 		width: 100%;
 		overflow-x: hidden;
@@ -75,7 +106,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.item-image {
 		.item-overlay {
 			padding: 15px 25px;
@@ -98,12 +129,16 @@
 	}
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 376px) {
 	.header {
 		.header-title {
 			font-size: 4.5rem;
-			margin-top: 50px;
+			margin-top: 60px;
 		}
+	}
+
+	.pad-sm {
+		margin-top: 20px;
 	}
 
 	.main-btns {
@@ -116,6 +151,10 @@
 		.item-overlay-desc {
 			font-size: 0.85rem;
 			font-weight: 500;
+		}
+
+		.item-overlay {
+			padding: 15px 2px;
 		}
 
 		.item-overlay-tech,
