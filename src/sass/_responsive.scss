@@ -4,13 +4,66 @@
 		overflow-x: hidden;
 	}
 
+	.header {
+		.header-title {
+			text-align: center;
+			font-size: 5.7rem;
+		}
+
+		.header-subtitle {
+			text-align: center;
+		}
+	}
+
+	.about-section {
+		p {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.common-heading {
+		text-align: center;
+
+		h2,
+		h4,
+		span,
+		.image-block {
+			text-align: center;
+		}
+	}
+
 	.pad-tb {
 		padding-top: 80px;
 		padding-bottom: 80px;
 	}
 
-	.common-heading {
+	.tech-block {
+		padding: 50px 15px;
+	}
+
+	.follow-label {
+		display: block;
 		text-align: center;
+
+		h6 {
+			margin: 0;
+			text-align: center;
+			margin-bottom: 20px;
+
+			&::after {
+				content: '';
+				width: 0;
+			}
+		}
+
+		i {
+			font-size: 1.6rem;
+			margin: 0 auto;
+			margin-left: 8px;
+			margin-right: 8px;
+			margin-bottom: 25px;
+		}
 	}
 
 	::-webkit-scrollbar {
@@ -19,5 +72,41 @@
 
 	::-webkit-scrollbar-track {
 		background: $dark-blue;
+	}
+}
+
+@media (max-width: 767px) {
+	.item-image {
+		.item-overlay {
+			padding: 15px 25px;
+		}
+
+		.item-overlay-desc {
+			margin-top: 0;
+		}
+
+		.item-overlay-list li,
+		.item-overlay-tech,
+		.item-overlay-desc {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+
+	.item-btn {
+		padding: 8px 20px;
+	}
+}
+
+@media (max-width: 376px) {
+	.header {
+		.header-title {
+			font-size: 4.5rem;
+		}
+	}
+
+	.main-btns {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 }
