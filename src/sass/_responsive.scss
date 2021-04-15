@@ -33,6 +33,15 @@
 		overflow-x: hidden;
 	}
 
+	.navbar-light {
+		.navbar-nav {
+			.nav-link {
+				width: max-content;
+				margin: 0 auto;
+			}
+		}
+	}
+
 	.header {
 		.header-title {
 			text-align: center;
