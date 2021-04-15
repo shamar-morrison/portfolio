@@ -102,11 +102,35 @@
 	.header {
 		.header-title {
 			font-size: 4.5rem;
+			margin-top: 50px;
 		}
 	}
 
 	.main-btns {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
+		row-gap: 20px;
+	}
+
+	.item-image {
+		.item-overlay-desc {
+			font-size: 0.85rem;
+			font-weight: 500;
+		}
+
+		.item-overlay-tech,
+		.item-overlay-list {
+			display: none;
+			margin-bottom: 0;
+		}
+
+		.item-btn {
+			font-size: 0.85rem;
+			padding: 8px 20px;
+		}
+	}
+
+	.item-btn-grid {
+		column-gap: 5px;
 	}
 }

@@ -193,6 +193,10 @@ ul {
 	background-size: cover, cover;
 	background-repeat: no-repeat, no-repeat;
 
+	.header {
+		margin-bottom: 46px;
+	}
+
 	.header-title {
 		background-image: $gradient;
 		background-clip: text;
@@ -200,7 +204,6 @@ ul {
 		color: transparent;
 
 		font-weight: 800;
-		// font-size: clamp(2.5rem, 50% + 1rem, 5.85rem);
 		font-size: 5.85rem;
 		letter-spacing: -3px;
 	}
@@ -231,6 +234,7 @@ ul {
 	border: none;
 	border-radius: 100px;
 	position: relative;
+	display: block;
 
 	i {
 		font-size: 0.85rem;
@@ -459,9 +463,6 @@ span.circle {
 	.item-overlay-tech {
 		font-size: 1.1rem;
 		line-height: 1.65;
-	}
-
-	.item-overlay-desc {
 		font-weight: 500;
 	}
 }
