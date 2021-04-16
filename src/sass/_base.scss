@@ -22,6 +22,7 @@ img,
 .border-anim::after,
 .card-set,
 .navbar,
+.header-subtitle,
 .custom-btn,
 .isotope-item,
 .item-img,
@@ -192,7 +193,7 @@ ul {
 	top: 0;
 	bottom: 0;
 	left: 0;
-	height: 100vh;
+	height: 100%;
 	width: 200px;
 	font-weight: 500;
 	text-align: center;
@@ -214,13 +215,6 @@ ul {
 		background-color: #fff;
 		color: #000;
 	}
-}
-
-.mobile__menu--close {
-	float: right;
-	padding-right: 10px;
-	font-size: 1.5rem;
-	color: #000;
 }
 
 .mobile__menu--download {
@@ -412,7 +406,7 @@ span.circle {
 		bottom: 0;
 		height: 4px;
 		background: -webkit-linear-gradient(-45deg, #fc00c7 0, #1c4efd 54%, #00aded 100%);
-		background: linear-gradient(135deg, #9100ff 0, #3663ff 54%, #00e2ff 100%);
+		background: $gradient--4;
 	}
 }
 
@@ -596,7 +590,7 @@ span.circle {
 	}
 }
 
-// --------------- PROJECTS SECTION ----------------- //
+// --------------- CONTACT SECTION ----------------- //
 
 footer {
 	position: relative;

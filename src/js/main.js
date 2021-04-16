@@ -18,7 +18,7 @@ const navbarObserver = new IntersectionObserver(
 );
 navbarObserver.observe(heroSec);
 
-/** onload */
+/** onload Event */
 window.onload = function () {
 	// Remove Preloader Gif
 	document.querySelector('.preloader').style.opacity = '0';
