@@ -482,6 +482,7 @@ span.circle {
 	border-radius: 8px;
 	overflow: hidden;
 	background: #f3f9ff;
+	box-shadow: $card-shadow;
 
 	&:focus,
 	&:hover {
