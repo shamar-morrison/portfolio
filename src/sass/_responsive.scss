@@ -126,11 +126,13 @@
 		.item-overlay-desc {
 			font-size: 1rem;
 			font-weight: 500;
+			line-height: normal;
 		}
 	}
 
 	.item-btn {
-		padding: 8px 20px;
+		padding: 8px 12px;
+		font-size: 14px;
 	}
 }
 
@@ -164,7 +166,6 @@
 
 		.item-btn {
 			font-size: 0.85rem;
-			padding: 8px 20px;
 		}
 	}
 

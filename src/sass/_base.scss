@@ -462,7 +462,7 @@ span.circle {
     background-repeat: repeat;
     height: 400px;
     background-size: auto;
-    // opacity: 0.7;
+    opacity: 0.3;
   }
 
   h2 {
@@ -520,20 +520,22 @@ span.circle {
     line-height: 1.65;
     font-weight: 500;
   }
+
+  .item-overlay-desc {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .item-btn-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: max-content;
-  margin: 0 auto;
-
-  column-gap: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
 .item-btn {
   position: relative;
-  display: inline-block;
   padding: 10px 20px;
   font-size: 1rem;
   color: #fff;
@@ -646,4 +648,48 @@ footer {
     justify-content: center;
     place-items: center;
   }
+}
+
+.tabs-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+
+  .tab-item {
+    font-weight: 600;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 600ms cubic-bezier(0.17, 0.85, 0.438, 0.99);
+
+    &:hover {
+      color: $hot-pink;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: $hot-pink;
+      border-radius: 100px;
+    }
+  }
+}
+
+#projects-list > div {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.project-desc {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
 }
